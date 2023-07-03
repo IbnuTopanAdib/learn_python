@@ -6,3 +6,6 @@ class LuasBangunan:
         return (self.alas * self.tinggi)/2
     def pp(self):
         return self.alas*self.tinggi
+    
+
+    

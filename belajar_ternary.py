@@ -8,3 +8,5 @@ def bilangan_genap(angka):
 output = bilangan_genap(input_user)
 
 print(output)
+
+

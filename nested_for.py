@@ -49,12 +49,14 @@
 #         print(j, end="")
 #     print()
 
-number = int(input("enter the number: "))
+# number = int(input("enter the number: "))
 
-for i in range (2, number+1):
-    for j in range (2, i):
-        if i % j ==0:
-            pass
-            break
-    else:
-        print(i, ' is prime number')
+# for i in range (2, number+1):
+#     for j in range (2, i):
+#         if i % j ==0:
+#             pass
+#             break
+#     else:
+#         print(i, ' is prime number')
+
+

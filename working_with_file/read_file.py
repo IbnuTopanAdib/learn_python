@@ -27,6 +27,6 @@ with open(filename, 'r') as f:
     read_size = 10
     content = f.read(read_size) # akan membaca 10 karakter pertama
     print(f.tell())
-    # while len(content) > 0:
-    #     print(content, end= "[]")
-    #     content = f.read(read_size)
+    while len(content) > 0:
+        print(content, end= "[]")
+        content = f.read(read_size)
