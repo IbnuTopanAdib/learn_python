@@ -23,7 +23,7 @@ data_pasangan = biodata_baru.pop('spouse')
 print("data pasangan : {}".format(data_pasangan))
 print("biodata_baru: {}\n".format(biodata_baru))
 
-# pop_item pada dictionary akan mengeluarkan value dar
+# pop_item pada dictionary akan mengeluarkan key dan value yang disimpan dalam tuple
 item = biodata_baru.popitem()
 print(item)
 print("biodata_baru: {}\n".format(biodata_baru))
