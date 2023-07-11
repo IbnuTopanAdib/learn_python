@@ -40,5 +40,29 @@ print(mylist)
 mylist.sort(key = lambda x : len(x), reverse = True)
 print(mylist)
 
+# filter dengan lambda
+data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
+def kurang_dari_lima(x):
+    return x < 5
+data_baru = list(filter(kurang_dari_lima, data))
+
+print(data_baru)
+
+# kita juga bisa menggunakan lambda
+
+data_baru = list(filter(lambda x: x>=3 , data))
+print(data_baru)
+
+#kita bisa juga membuat bilangan genap 
+
+data_genap = list(filter(lambda x: x%2 ==0, data))
+print(data_genap)
+
+data_ganjil = list(filter(lambda x: x%2!=0 , data))
+print(data_ganjil)
+
+#kita bisa juga membuat bilangan kelipatan
+data_kelipatan_3 = list(filter(lambda x: x%3==0 , data))
+print(data_kelipatan_3)
 

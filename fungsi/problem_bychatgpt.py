@@ -27,11 +27,13 @@ list_saya = [
         "umur" : 33
     },
 ]
-def age (x: list):
-    return x["umur"]
-list_saya.sort(key = age)
+
+list_saya.sort(key = lambda x : x["umur"], reverse = True)
 
 print(list_saya)
+
+
+
 
 
 
