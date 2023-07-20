@@ -1,5 +1,5 @@
 if __name__ == '__main__':
-    n = int(input())
+    n = int(input("masukan jumlah siswa: "))
     student_marks = {}
     for _ in range(n):
         name, *line = input().split()
@@ -15,4 +15,4 @@ if __name__ == '__main__':
                 hasil += i
                 rata = hasil/ float(len(value))
 
-    print(rata)
+    print(f"{rata:0.2f}")
