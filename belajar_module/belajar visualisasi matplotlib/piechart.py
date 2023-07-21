@@ -1,13 +1,21 @@
 from matplotlib import pyplot as plt
+
+
 plt.style.use('ggplot')
-hewan_peliharaan = ['anjing', 'kucing', 'ikan', 'burung','lainnya']
 
-jumlah = [12, 25, 15, 32, 7]
+idol = ['Freya', 'IU', 'Tzuyu', 'Yeji', 'Lalisa']
+vote = [20, 25, 30, 34, 66]
 
-colors = ['#2ca02c','#7f7f7f' , '#d62728', '#ff7f0e','#1f77b4' ]
+colors_for_data_viz = ['#1f77b4', '#2ca02c', '#d62728', '#ff7f0e', '#7f7f7f']
+explode = [0, 0, 0, 0, 0.05]
 
-plt.pie(jumlah, labels= hewan_peliharaan, wedgeprops= {'edgecolor' : 'black'})
+plt.pie(vote, labels= idol,
+        colors= colors_for_data_viz,
+        wedgeprops={'edgecolor' :'black'}, explode= explode, autopct='%.0f%%')
 plt.show()
+plt.savefig('assets/piechart.png')
+
+
 '''
 Blue (#1f77b4)
 Gray (#7f7f7f)

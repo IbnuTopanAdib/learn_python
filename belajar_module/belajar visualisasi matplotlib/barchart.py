@@ -29,6 +29,7 @@ plt.title("Most Popular Languages")
 plt.ylabel("Programming Language")
 plt.xlabel("Number of people who use")
 plt.tight_layout()
+plt.savefig('assets/barplot.png')
 plt.show()
 
 
